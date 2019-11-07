@@ -68,12 +68,11 @@ input
 
 def temp_calculator():
 
-    # TODO: Write code that prompts the user for a temperature in degrees
+    # Write code that prompts the user for a temperature in degrees
     # celsius and prints the equivalent temperature in degrees fahrenheit.
     # The formula is C = (F - 32) * (5/9).
- # Define a function to convert
+    # Define a function to convert
     # celsius temperature to Fahrenheit
-
 
 celsius = float(input("Enter temperature in celsius: ")
 'Enter temperature in celsius:' 32
@@ -85,20 +84,23 @@ print('%.2f Celsius is: %0.2f Fahrenheit' % (celsius, fahrenheit))
 
 def equitable_bill_splitter():
 
-    # TODO: Read the following code and add comments to each line explaining what
-    # it does. To write a comment, begin the line with an octothorpe (hashtag, #)
-    #
+    
+#Create the variable people and ask the user to provide an answer in the form of an integer "How many people are paying?"
     people=int(input("How many people are paying? "))
+#Create an array stored to the variable salaries 
     salaries=[]
+#Create a total variable that will assign value to salaries
     total=0
-
+#create an interation loop for salary of each person formatted to its own index
     for i in range(people):
         sal=int(input("What is the salary of person {}?".format(i+1)))
         total += sal
         salaries.append(sal)
 
+#create a variable total_bill that prompts the user to answer the question "How much is the bill? " 
+#if float is not added then the user will have to put the bill total in round numbers. 
     total_bill=int(input("How much is the bill? "))
-
+#process through the loop and return the amount per person to be paied based on the comparison of salary to total expense ratio
     for j in range(len(salaries)):
         print("Person {} should pay ${}\n".format(
             j + 1, round((total_bill * (salaries[j]/total)), 2)))
