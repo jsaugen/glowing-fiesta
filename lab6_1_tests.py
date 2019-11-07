@@ -1,3 +1,8 @@
+#I don't understand how I am supposed to execute this. 
+#Is this for you? Or for us to do? 
+#I'm confused. Please Advise. 
+#Thank you!
+
 import unittest
 import lab6_1 as target 
 

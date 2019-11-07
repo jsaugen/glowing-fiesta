@@ -126,7 +126,7 @@ def guessing_game(num):
 >>> import random
 >>> randNum = random.randint(1,100)
 >>> guesses = 0
->>> for i in range (1, 100):
+>>> for i in range (1, 10):
 ...     guesses = guesses + 1
 ...     print ("Hi Human! Guess a number 1-100! \n")
 ...     guess = input()

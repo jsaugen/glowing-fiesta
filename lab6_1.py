@@ -4,6 +4,11 @@
 # is divisible by 7 or false if not.
 # Note, you should not prompt the user for input. 
 
+def divisible_by_7(num):
+    if num % 7 == 0:
+       return True
+    else:
+       return False
 
 # Write a function called compare_it that takes two parameters. 
 # You should first test if both parameters are integers.
@@ -13,6 +18,19 @@
 # Finally, test if the parameters are greater than zero.
 # If they are not, return False.
 # If all of these tests pass, return True.
+
+def compare_it (para1, para2):
+   if not isinstance(para1, int) or not (para2, int):
+      return False
+
+   if para1 == para2:
+      return False
+
+   if para1 < 0 and para2 < 0:
+      return False
+
+   return True
+
 
 
 # Write a function called keyword_counter that takes three parameters
@@ -34,8 +52,11 @@
 # one of the words is "fish" your function should count 
 # "fish", "Fish", "FISH" or any other combination of 
 # capitalization as an occurrence. 
-file_name = "test6_1.txt" # DELETE THIS LINE before you build the function.
 with open(file_name, "r") as f:
    text = f.read().replace("\n", " ")
+
+
+def keyword_counter(hey, hi, yo_file):
+    
 
 
