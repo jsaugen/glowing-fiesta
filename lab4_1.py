@@ -4,10 +4,15 @@ def is_even():
    user_data = int(input("Please give me an integer. "))
    out = None
    
-   # TODO: 
    # Create a conditional that sets out to True if the user enters
    # an even integer and False if the user enters an odd integer.
-    
+
+   if user_data 2 == 0
+     out = True
+
+   else:
+      out = False
+  
    # This is for the test.
    return out 
 
