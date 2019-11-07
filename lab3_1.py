@@ -48,17 +48,11 @@ last_two_letters
 
 def greeter_bot():
 
-    # TODO: Use the input() function to prompt the user for their name.
+    # Use the input() function to prompt the user for their name.
     # Then assign the value to a variable called name and print a greeting.
     # I have started it for you, but you need to modify the input and
     # print functions.
     # Hint: to get the test to pass, the greeting should be "Hello, input name"
-    fname = input()
-    print()
-
-
-def greeter_bot():
-
 
 fname = input("Hello, input name")
 print(input)
@@ -82,9 +76,9 @@ print('%.2f Celsius is: %0.2f Fahrenheit' % (celsius, fahrenheit))
 32.00 Celsius is: 89.60 Fahrenheit
 
 
-def equitable_bill_splitter():
 
-    
+def equitable_bill_splitter():
+      
 #Create the variable people and ask the user to provide an answer in the form of an integer "How many people are paying?"
     people=int(input("How many people are paying? "))
 #Create an array stored to the variable salaries 
@@ -100,6 +94,7 @@ def equitable_bill_splitter():
 #create a variable total_bill that prompts the user to answer the question "How much is the bill? " 
 #if float is not added then the user will have to put the bill total in round numbers. 
     total_bill=int(input("How much is the bill? "))
+
 #process through the loop and return the amount per person to be paied based on the comparison of salary to total expense ratio
     for j in range(len(salaries)):
         print("Person {} should pay ${}\n".format(
