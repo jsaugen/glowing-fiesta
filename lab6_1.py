@@ -57,6 +57,7 @@ with open(file_name, "r") as f:
 
 
 def keyword_counter(hey, hi, yo_file):
-    
+   if yo_file:
+
 
 
